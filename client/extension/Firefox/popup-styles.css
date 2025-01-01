@@ -1,0 +1,169 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  width: 300px;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align all child elements horizontally */
+  justify-content: center; /* Center align all child elements vertically */
+}
+
+/* Heading style */
+h1 {
+  font-size: 18px;
+  text-align: center;
+  color: #0078d7;
+  margin-bottom: 20px;
+}
+
+/* Form container */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements */
+  width: 100%;
+}
+
+/* Input field style */
+#master-password {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button style */
+button {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0078d7;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Disabled button state */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Container for the Google login button */
+.google-login-button-container {
+  display: flex;
+  justify-content: center; /* Center align the Google button */
+  width: 130%;
+  margin-top: 10px;
+}
+
+/* Google login button style */
+.google-login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #a9f57d;
+  border-radius: 5px;
+  background-color: #e8f3f0;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+  height: 40px;
+}
+
+.google-login-button:hover {
+  background-color: #c4e047;
+}
+
+/* Google logo styling */
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Optional: Style for text within button */
+.google-login-button span {
+  display: inline-block;
+}
+
+/* Link styling */
+#open-website-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #0078d7;
+  text-decoration: none;
+}
+
+#open-website-link:hover {
+  text-decoration: underline;
+}
+
+/* Status message */
+#status {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}
+
+.spinner {
+  border: 4px solid transparent;
+  border-top: 4px solid #ee0909;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Welcome message styles */
+.welcome-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50; 
+  background: linear-gradient(90deg, #4CAF50, #2196F3);
+  -webkit-text-fill-color: transparent;
+  text-align: center; 
+  padding: 10px 20px;
+  border: 2px solid #2196F3;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interaction effects for welcome message */
+.welcome-message:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-message:active {
+  transform: scale(0.98);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}

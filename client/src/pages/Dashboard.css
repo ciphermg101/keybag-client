@@ -1,0 +1,692 @@
+/* src/Dashboard.css */
+
+body {
+    font-family: 'Ramaraja', sans-serif; /* Set Ramaraja font for all text */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #007bff; /* Navbar background color */
+    color: white; /* Navbar text color */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Padding for navbar */
+    border-radius: 10px; /* Rounded corners for navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5em; /* Brand font size */
+}
+
+.navbar-links button {
+    margin-left: 15px; /* Space between buttons */
+    background-color: transparent; /* Transparent background */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navbar-links button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height for the layout */
+}
+
+.sidebar {
+    flex: 0 0 200px; /* Set a fixed width for the sidebar */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    border-radius: 10px; /* Rounded corners for sidebar */
+}
+
+.menu-button {
+    margin-bottom: 15px; /* Space between buttons */
+    padding: 15px; /* Increase button size */
+    font-size: 16px; /* Increase font size */
+    background-color: #0056b3; /* Darker blue for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.menu-button:hover {
+    background-color: #004494; /* Darker blue on hover */
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #fff; /* White color for headings in sidebar */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: transparent;
+    margin: 10px 0;
+    padding: 10px;
+    color: black; /* White text for links */
+    cursor: pointer;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Space between inputs */
+    width: 100%; /* Full width for inputs */
+}
+
+
+/* Button styles */
+.generate-button, .add-button {
+    padding: 10px;
+    font-size: 16px; /* Increase font size */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.generate-button {
+    background-color: #007bff; /* Blue background for Generate Password button */
+}
+
+.add-button {
+    background-color: #007bff; /* Blue background for Add New Password button */
+}
+
+.generate-button:hover, .add-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+}
+/* src/Dashboard.css */
+
+body {
+    font-family: 'Ramaraja', sans-serif; /* Set Ramaraja font for all text */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #007bff; /* Navbar background color */
+    color: white; /* Navbar text color */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Padding for navbar */
+    border-radius: 10px; /* Rounded corners for navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5em; /* Brand font size */
+}
+
+.navbar-links button {
+    margin-left: 15px; /* Space between buttons */
+    background-color: transparent; /* Transparent background */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navbar-links button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.navbar-links .profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-links .profile-dropdown .dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar-links .profile-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
+.navbar-links .profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Target all Snackbar components */
+.MuiSnackbar-root {
+    background-color: darkgrey !important; /* Set background color */
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid rgb(11, 41, 211) !important; /* Add black border */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height for the layout */
+}
+
+.sidebar {
+    flex: 0 0 200px; /* Set a fixed width for the sidebar */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    border-radius: 10px; /* Rounded corners for sidebar */
+}
+
+.menu-button {
+    margin-bottom: 15px; /* Space between buttons */
+    padding: 15px; /* Increase button size */
+    font-size: 16px; /* Increase font size */
+    background-color: #0056b3; /* Darker blue for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.menu-button:hover {
+    background-color: #004494; /* Darker blue on hover */
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0; /* Reduce the top and bottom margin */
+    padding: 5px 0; /* Optional: Reduce padding if needed */
+}
+
+h2 {
+    color: black; /* White color for headings in sidebar */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: transparent;
+    margin: 10px 0;
+    padding: 10px;
+    color: white; /* White text for links */
+    cursor: pointer;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Space between inputs */
+    width: 100%; /* Full width for inputs */
+}
+
+
+/* Increase font size for the message when no option is selected */
+.no-option-message {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Make the text bold for emphasis */
+    color:black; /* Optional: Set the text color */
+}
+
+
+/* Increase font size and set color for the added password text */
+.added-password-text {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Make the text bold for emphasis */
+    color: black; /* Set the text color to black */
+}
+
+
+/* Button styles */
+.generate-button, .add-button {
+    padding: 10px;
+    font-size: 16px; /* Increase font size */
+    color: white; /* White text */
+    border: none; /* No border */
+    gap: 8px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.generate-button {
+    background-color: #007bff; /* Blue background for Generate Password button */
+}
+
+.add-button {
+    background-color: #007bff; /* Blue background for Add New Password button */
+}
+
+.generate-button:hover, .add-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 19px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 19px;
+}
+
+th {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+}
+
+/* Container for the password strength information */
+.password-strength {
+    margin-top: 20px;
+}
+
+.header-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sort-options, .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height:100%; 
+}
+
+.sort-options select, .search-bar input {
+    margin-left: 10px;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 5px;
+}
+
+.password-strength h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.password-strength p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+.site-url-cell {
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 200px; /* Adjust as needed */
+    overflow-wrap: break-word; /* Ensures breaking long words */
+}
+
+.password-strength table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.password-strength th,
+.password-strength td {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.password-strength .site-url-cell {
+    max-width: 200px; /* Adjust as needed */
+    overflow-wrap: break-word;
+}
+
+/* Strength bar container */
+.strength-bar {
+    width: 90%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.strength-level {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.strength-weak {
+    background-color: red;
+}
+
+.strength-moderate {
+    background-color: orange;
+}
+
+.strength-strong {
+    background-color: yellowgreen;
+}
+
+.strength-very-strong {
+    background-color: green;
+}
+
+/* Style suggestions */
+.password-strength ul {
+    padding-left: 20px; 
+    margin: 0;
+}
+
+.password-strength ul li {
+    color: #070707;
+    margin: 5px 0;
+}
+
+/* Dark and Light mode styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Menu Button */
+.menu-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    height: 100px;
+}
+
+.switch-theme-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    padding: 12px; /* Increase button size */
+    font-size: 16px; /* Increase font size */
+    background-color: #0056b3; /* Darker blue for buttons */
+    color: white; /* White text for buttons */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.switch-theme-button:hover {
+    background-color: #004494; /* Darker blue on hover */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    background-color: #133172;
+    color: #333;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    z-index: 10;
+}
+
+.dropdown-menu p {
+    margin: 0 0 10px;
+}
+
+.dropdown-menu button {
+    background-color: #12b692;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: linear-gradient(135deg, #007bff, rgb(135, 181, 250));
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 170px;
+    padding: 10px 0;
+}
+
+.dropdown-content button {
+    width: 90%;
+    padding: 12px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(75, 106, 190);
+    border-radius: 6px;
+    margin: 8px 0;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.dropdown-content button:hover {
+    background-color: #5a7edc;
+    color: #5a7edc;
+    transform: scale(1.05);
+}
+
+/* Theme-specific background colors */
+.dashboard.light {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.dashboard.dark {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* Additional styling for other elements */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.toggle-password-btn:hover {
+    color: #007bff;
+}
+
+.copy-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #333;
+}
+
+.copy-button:hover {
+    color: #007bff;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* Adjust the gap value as needed */
+    margin-top: 10px; /* Optional: Adds some space above the button group */
+
+}
+
+.import-btn,
+.export-btn {
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 100px; /* Set a fixed width to make buttons shorter */
+    text-align: center;
+}
+
+.import-btn:hover,
+.export-btn:hover {
+    background-color: #45a049;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%; /* Optional: Ensures the wrapper spans the full width */
+}
+
+.recently-added {
+    color: black;
+    font-weight: bold; /* Optional: makes "Recently Added" stand out */
+}
+.activity-highlight {
+    color: black;
+    font-weight: bold; /* Optional for emphasis */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px; /* Adjust this as needed */
+}
+
+/* Optional: Adjust button styling to match the rest of your design */
+.add-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    /* Add other button styling here */
+}
+
+.actions-group {
+    display: flex;
+    gap: 8px; /* Adjust spacing between buttons */
+}
+
+.actions-group button {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px; /* Space between icon and text */
+}
+
+.no-option-image {
+    max-width: 100%; 
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

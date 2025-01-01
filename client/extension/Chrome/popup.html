@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup-styles.css">
+  <title>Key Bag Password Manager</title>
+</head>
+<body>
+  <h1>Key Bag Password Manager</h1>
+
+  <p id="welcome-message"></p>
+  
+  <!-- Master password login form -->
+  <form id="master-password-form">
+    <input type="password" id="master-password" placeholder="Enter Master Password" required />
+    <button id ="master-password-btn" type="submit">Login</button>
+  </form>
+
+  <!-- Google login button -->
+  <button id="login-with-google-btn" class="google-login-button">
+    <img src="https://www.cdnlogo.com/logos/g/35/google-icon.svg" alt="Google Logo" class="google-logo">
+    Login with Google
+  </button>
+
+  <!-- Link to open website (optional) -->
+  <a href="http://localhost:5173/login" target="_blank" id="open-website-link">Manage Passwords</a>
+
+  <!-- Status message -->
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
